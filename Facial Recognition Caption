@@ -1,0 +1,10 @@
+Facial Recognition Capstone ProjectThis project explores facial recognition technology as part of the Machine Learning Engineering Bootcamp Capstone.Refer to the Project Outline for detailed goals and methodology.Project StructureCopyfacial_recognition_project/
+├── data/                     # LFW dataset will be cached here by scikit-learn (usually in ~/scikit_learn_data/lfw_home/)
+├── src/
+│   └── load_data.py        # Script to load the LFW dataset
+├── notebooks/                # Jupyter notebooks for exploration and analysis
+├── tests/                    # Unit and integration tests
+├── models/                   # Saved model files
+├── app/                      # Code for API and UI (Phase 2)
+└── README.md                 # This fileGetting StartedPrerequisites•Python 3.x•scikit-learn (pip install scikit-learn)•joblib (pip install joblib)•(Optional, for image display) matplotlib (pip install matplotlib)Loading DataThe Labeled Faces in the Wild (LFW) dataset is used. The src/load_data.py script utilizes scikit-learn to automatically download and cache the dataset.To run the script:Copycd /home/ubuntu/facial_recognition_project/src
+python3 load_data.pyThe first time you run this, it will download the dataset (~200MB) and may take several minutes. Subsequent runs will load the cached version much faster.Next Steps•Explore the loaded data in a Jupyter notebook (notebooks/).•Implement facial detection algorithms (e.g., using OpenCV).•Implement facial recognition algorithms (e.g., using pre-trained models or libraries like face_recognition).•Evaluate model performance and potentially analyze bias.•Develop API and UI (Phase 2
